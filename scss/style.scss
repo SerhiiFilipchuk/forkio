@@ -1,0 +1,60 @@
+@import "normalize";
+@import "fonts";
+
+
+/* HEADER */
+
+.header {
+  height: 104px;
+  background: pink; 
+}
+
+.logo {
+  background: green;
+  padding-left: 30px;
+
+  .logo-text {
+    padding-left: 17px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .logo-prefix {
+    color: #333333;
+  }
+
+  .logo-suffix {
+    color: #8d81ac;
+  }
+}
+
+.nav {
+  background: red;
+  
+  ul {
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  a {
+    color: #635c73;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .buy-now-btn {
+    display: inline-block;
+    background: #8d81ac;
+    color: #ffffff;
+    padding: 0 36px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 50px;
+  }
+}
