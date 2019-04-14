@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<div class="conteiner">
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Page Title</title>
@@ -13,33 +12,38 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.waterwheelCarousel.min.js"></script>    
         <script src="./js/all.js"></script>
     </head>
-    <body>
-        <header>
-    <div class="header row no-gutters d-flex justify-content-between">
-        <div class="logo col-lg-2 d-flex justify-content-start align-items-center">
-            <div>
-                <img src="./images/forkio-logo.png" alt="">
+<body>
+    <header>
+    <div class="container">
+        <div class="header row d-flex justify-content-between">
+            <div class="logo col-xl-2 d-flex justify-content-start align-items-center">
+                <div>
+                    <img src="./images/forkio-logo.png" alt="">
+                </div>
+                <div class="logo-text">
+                    <p class="logo-prefix">fork<span class="logo-suffix">io</span></p>
+                </div>
             </div>
-            <div class="logo-text">
-                <p class="logo-prefix">fork<span class="logo-suffix">io</span></p>
+            <div class="nav col-xl-7">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li><a href="">Overview</a></li>
+                    <li><a href="">About Fork</a></li>
+                    <li><a href="">Buying Options</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a class="buy-now-btn" href="">Buy Now</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="nav col-lg-7">
-            <ul class="d-flex justify-content-between align-items-center">
-                <li><a href="">Overview</a></li>
-                <li><a href="">About Fork</a></li>
-                <li><a href="">Buying Options</a></li>
-                <li><a href="">Support</a></li>
-                <li><a class="buy-now-btn" href="">Buy Now</a></li>
-            </ul>
         </div>
     </div>
 </header>
-        <div class="hero">
-            <div class="sub-hero row no-gutters">
-                <div class="col-lg-12">
+    <div class="hero">
+        <div class="container">
+            <div class="sub-hero row">
+                <div class="col-xl-12">
                     <h1 class="hero-title">fork app</h1>
                     <p class="hero-description">A real gamechanger in the world of web development</p>
                     <p class="hero-note">v. 2.8 For Mac and Windows</p>
@@ -50,28 +54,152 @@
                 </div>
             </div>
         </div>
-        <div class="revol-editor row">
-            <div class="col-lg-12">
-                <h2>Revolutionary editor</h2>
-                <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id 
-                    <br>metus id quam auctor molestie eget ut augue. 
-                </p>
-                <div class="git-btns">
-                    <a class="git-btn github-button" href="https://github.com/ntkme/github-buttons/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
-                    <a class="git-btn github-button" href="https://github.com/ntkme/github-buttons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                    <a class="git-btn github-button" href="https://github.com/ntkme/github-buttons/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+    </div>
+    <div class="revol-editor">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2>Revolutionary editor</h2>
+                    <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id 
+                        <br>metus id quam auctor molestie eget ut augue. 
+                    </p>
+                    <div class="git-btns">
+                        <a class="git-btn github-button" href="https://github.com/ntkme/github-buttons/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
+                        <a class="git-btn github-button" href="https://github.com/ntkme/github-buttons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+                        <a class="git-btn github-button" href="https://github.com/ntkme/github-buttons/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="what-you-get row no-gutters">
-            <div class="opportunities col-lg-5">
-                
-            </div>
-            <div class="what-you-get-title col-lg-7">
-
+    </div>
+    <div class="what-you-get">
+        <img class="code-img" src="./images/html-code.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="opportunities col-xl-5">
+                    <div class="opportunity">
+                        <div class="opportunity-img1">
+                            <img src="./images/opportunity-1.png" alt="">
+                        </div>
+                        <div class="opportunity-text1">
+                            <div class="opportunity-title">Creatred to Make The Web Better</div>
+                            <div class="opportunity-description">Aenean cursus imperdiet nisl id fermentum. 
+                                Aliquam pharetra dui laoreet vulputate dignissim. 
+                                Sed id metus id quam auctor molestie eget ut augue. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunity">
+                        <div class="opportunity-img2">
+                            <img src="./images/opportunity-2.png" alt="">
+                        </div>
+                        <div class="opportunity-text2">
+                            <div class="opportunity-title">Incredibly Powerful Tool</div>
+                            <div class="opportunity-description">Maecenas eu dictum felis, a dignissim nibh. Mauris 
+                                    rhoncus felis odio, ut volutpat massa placerat ac. 
+                                    Curabitur dapibus iaculis mi gravida luctus. 
+                                    Aliquam erat volutpat. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunity">
+                        <div class="opportunity-img3">
+                            <img src="./images/opportunity-3.png" alt="">
+                        </div>
+                        <div class="opportunity-text3">
+                            <div class="opportunity-title">Experimental Stuff</div>
+                            <div class="opportunity-description">Maecenas eu dictum felis, a dignissim nibh. Mauris 
+                                    rhoncus felis odio, ut volutpat massa placerat ac. 
+                                    Curabitur dapibus iaculis mi gravida luctus. 
+                                    Aliquam erat volutpat. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunity">
+                        <div class="opportunity-img4">
+                            <img src="./images/opportunity-4.png" alt="">
+                        </div>
+                        <div class="opportunity-text4">
+                            <div class="opportunity-title">Creatred to Make The Web Better</div>
+                            <div class="opportunity-description">Maecenas eu dictum felis, a dignissim nibh. Mauris 
+                                    rhoncus felis odio, ut volutpat massa placerat ac. 
+                                    Curabitur dapibus iaculis mi gravida luctus. 
+                                    Aliquam erat volutpat. 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="what-you-get-title col-xl-7">
+                    <p>&#60;Here is what you get&#62;</p>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                        <div id="carousel">
+                            <div class="comment">
+                                <div class="user-data">
+                                    <div class="user-img"></div>
+                                    <div class="about-user">
+                                        <p><a class="user-name" href="">Steven Strange</a></p>
+                                        <p><a class="user-nickname" href="">@DoctorS</a></p>
+                                    </div>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
+                                    <div class="comment-time">2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="user-data">
+                                    <div class="user-img"></div>
+                                    <div class="about-user">
+                                        <p><a class="user-name" href="">Steven jsjjjv</a></p>
+                                        <p><a class="user-nickname" href="">@jbjkkw</a></p>
+                                    </div>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
+                                    <div class="comment-time">5 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="user-data">
+                                    <div class="user-img"></div>
+                                    <div class="about-user">
+                                        <p><a class="user-name" href="">Steven jsjjjv</a></p>
+                                        <p><a class="user-nickname" href="">@jbjkkw</a></p>
+                                    </div>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
+                                    <div class="comment-time">5 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="user-data">
+                                    <div class="user-img"></div>
+                                    <div class="about-user">
+                                        <p><a class="user-name" href="">Steven jsjjjv</a></p>
+                                        <p><a class="user-nickname" href="">@jbjkkw</a></p>
+                                    </div>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
+                                    <div class="comment-time">5 hours ago</div>
+                                </div>
+                            </div>
+                        <a href="#" class="prev-comment" id="prev">Prev</a>
+                        <a href="#" class="next-comment" id="next">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     @@footer('./include/footer.html')
-</div>
+</body>
 </html>

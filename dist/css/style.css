@@ -216,8 +216,13 @@ table {
 
 /* HEADER */
 
+.no-margin {
+  margin: 0;
+}
+
 .header {
   height: 104px;
+  margin: 0;
 }
 
 .logo img {
@@ -295,8 +300,7 @@ table {
 
 .hero .hero-note {
   font: normal normal 16px 'Montserrat';
-  -webkit-columns: #848e97;
-  columns: #848e97;
+  color: #848e97;
   text-transform: uppercase;
   padding-top: 18px;
 }
@@ -307,8 +311,9 @@ table {
 
 .hero .download-btn-block {
   position: absolute;
-  bottom: -65px;
+  bottom: -565px;
   left: calc(50% - 195px);
+  z-index: 1;
 }
 
 .hero .download-btn {
@@ -364,3 +369,207 @@ table {
 }
 
 /* WHAT YOU GET */
+
+.what-you-get {
+  background: #f4f4f4;
+  height: 710px;
+  position: relative;
+}
+
+.what-you-get .code-img {
+  position: absolute;
+  right: 0;
+  bottom: -65px;
+}
+
+.what-you-get .opportunities {
+  padding-top: 102px;
+}
+
+.what-you-get .opportunity {
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.what-you-get .opportunity-img3 {
+  padding-left: 15px;
+}
+
+.what-you-get .opportunity-img4 {
+  padding-left: 10px;
+}
+
+.what-you-get .opportunity-text1,
+.what-you-get .opportunity-text2,
+.what-you-get .opportunity-text3,
+.what-you-get .opportunity-text4 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  width: 380px;
+}
+
+.what-you-get .opportunity-text1 {
+  margin-left: 15px;
+}
+
+.what-you-get .opportunity-text2 {
+  margin-left: 35px;
+}
+
+.what-you-get .opportunity-text3 {
+  margin-left: 50px;
+}
+
+.what-you-get .opportunity-text4 {
+  margin-left: 45px;
+}
+
+.what-you-get .opportunity-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #323232;
+  padding-bottom: 15px;
+}
+
+.what-you-get .opportunity-description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #848e97;
+}
+
+.what-you-get-title {
+  font: normal bold 48px 'Montserrat';
+  padding-top: 84px;
+  color: #8d81ac;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* USER'S COMMENTS*/
+
+.comments {
+  height: 580px;
+  color: #ffffff;
+}
+
+#carousel {
+  height: 282px;
+  width: 950px;
+  border: 1px solid #222;
+  font-family: 'Montserrat';
+  margin-top: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel .prev-comment {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+
+#carousel .next-comment {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+}
+
+.comment {
+  height: 282px;
+  width: 730px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user-data .user-img {
+  height: 85px;
+  width: 85px;
+  border-radius: 50px;
+  background: url(../images/user-img.png);
+}
+
+.user-data .about-user {
+  padding-left: 25px;
+}
+
+.user-data .user-name {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #635c73;
+}
+
+.user-data .user-name:hover {
+  text-decoration: none;
+}
+
+.user-data .user-nickname {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #8d81ac;
+}
+
+.user-comment {
+  height: 197px;
+  font-family: 'Lato';
+  font-weight: normal;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user-comment .comment-itself {
+  font-size: 20px;
+  color: #333333;
+  line-height: 32px;
+  text-align: center;
+}
+
+.user-comment a {
+  color: #8d81ac;
+}
+
+.user-comment .comment-time {
+  font: 16px/32px 'Montserrat';
+  color: #848e97;
+}

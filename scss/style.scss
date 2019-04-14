@@ -4,9 +4,12 @@
 
 
 /* HEADER */
-
+.no-margin {
+  margin: 0;
+}
 .header {
   height: 104px;
+  margin: 0;
 }
 
 .logo {
@@ -79,6 +82,7 @@
   background-size: cover;
   text-align: center;
 
+
   .hero-title {
     font-family: 'Montserrat';    
     font-weight: bold;
@@ -103,7 +107,7 @@
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
-    columns: #848e97;
+    color: #848e97;
     text-transform: uppercase;
     padding-top: 18px;
   }
@@ -114,9 +118,9 @@
 
   .download-btn-block {
     position: absolute;
-    bottom: -65px;
+    bottom: -565px;
     left: calc(50% - 195px);
-    
+    z-index: 1;
   }
 
   .download-btn {
@@ -183,3 +187,187 @@
 
 /* WHAT YOU GET */
 
+.what-you-get {
+  height: 710px;
+  background-color: #f4f4f4;
+  position: relative;
+
+  .code-img {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+  }
+
+  .opportunities {
+    padding-top: 102px;
+  }
+
+  .opportunity {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .opportunity-img3 {
+    padding-left: 15px;
+  }
+
+  .opportunity-img4 {
+    padding-left: 10px;
+  }
+  .opportunity-text1, .opportunity-text2, .opportunity-text3, .opportunity-text4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 380px;
+  }
+
+  .opportunity-text1 {
+    margin-left: 15px;
+  }
+
+  .opportunity-text2 {
+    margin-left: 35px;
+  }
+
+  .opportunity-text3 {
+    margin-left: 50px;
+  }
+
+  .opportunity-text4 {
+    margin-left: 45px;
+  }
+
+  .opportunity-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #323232;
+    padding-bottom: 15px;
+  }
+
+  .opportunity-description {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #848e97;
+
+  }
+}
+
+.what-you-get-title {
+  padding-top: 84px;
+  color: #8d81ac;
+  font-size: 48px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* USER'S COMMENTS*/
+
+.comments {
+  height: 580px;
+  color: #ffffff;
+}
+
+
+#carousel {
+  height: 282px;
+  width: 950px;
+  border:1px solid #222;
+  font-family: 'Montserrat';
+  margin-top: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  overflow:hidden;
+
+  .prev-comment {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+  }
+
+  .next-comment {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+  }
+}
+
+.comment {
+  height: 282px;
+  width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-data {
+  display: flex;
+  align-items: center;
+
+  .user-img {
+    height: 85px;
+    width: 85px;
+    border-radius: 50px;
+    background: url(../images/user-img.png);
+  }
+
+  .about-user {
+    padding-left: 25px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #635c73;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .user-nickname {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #8d81ac;
+
+  }
+}
+
+.user-comment {
+  height: 197px;
+  font-family: 'Lato';
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .comment-itself {
+    font-size: 20px;
+    color: #333333;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  a {
+    color: #8d81ac;
+  }
+
+  .comment-time {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 32px;
+    color: #848e97;
+  }
+}
