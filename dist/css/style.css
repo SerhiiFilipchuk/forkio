@@ -458,34 +458,61 @@ table {
   color: #ffffff;
 }
 
+.comments .betwener {
+  height: 1px;
+  width: 770px;
+  background: #f4f4f4;
+  margin: 0 auto;
+}
+
 #carousel {
   height: 282px;
   width: 950px;
-  border: 1px solid #222;
   font-family: 'Montserrat';
   margin-top: 87px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: hidden;
 }
 
-#carousel .prev-comment {
+#carousel .carousel-btn {
+  font: normal normal 20px 'Lato';
+  color: #a3a3a3;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 10px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#carousel .carousel-btn:hover {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+#carousel #prev {
   left: 0px;
 }
 
-#carousel .next-comment {
-  position: absolute;
-  top: 50%;
+#carousel #next {
   right: 0px;
 }
 
-.comment {
-  height: 282px;
-  width: 730px;
+#slides {
+  overflow: hidden;
   margin: 0 auto;
+}
+
+#slides ul {
+  position: relative;
+}
+
+#slides li {
+  float: left;
+}
+
+.comment {
+  height: 100%;
+  width: 730px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,6 +565,11 @@ table {
   color: #8d81ac;
 }
 
+.user-data .user-nickname:hover {
+  text-decoration: none;
+  color: #726397;
+}
+
 .user-comment {
   height: 197px;
   font-family: 'Lato';
@@ -569,7 +601,88 @@ table {
   color: #8d81ac;
 }
 
+.user-comment a:hover {
+  text-decoration: none;
+  color: #726397;
+}
+
 .user-comment .comment-time {
   font: 16px/32px 'Montserrat';
   color: #848e97;
+}
+
+.media-buttons {
+  margin-top: 60px;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.media-buttons .media-btn {
+  display: inline-block;
+  height: 50px;
+  width: 240px;
+  font-size: 21px;
+  line-height: 50px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin-right: 40px;
+}
+
+.media-buttons .github-btn {
+  background: #f3f3f3;
+  color: #000;
+}
+
+.media-buttons .github-btn:hover {
+  text-decoration: none;
+  background: #dadada;
+}
+
+.media-buttons .twitter-btn {
+  background: #26a6d1;
+  color: #ffffff;
+}
+
+.media-buttons .twitter-btn:hover {
+  text-decoration: none;
+  background: #1e84a6;
+}
+
+.media-buttons .facebook-btn {
+  background: #3b5998;
+  color: #ffffff;
+}
+
+.media-buttons .facebook-btn:hover {
+  text-decoration: none;
+  background: #2d4373;
+}
+
+.media-buttons .icon-github,
+.media-buttons .icon-twitter,
+.media-buttons .icon-facebook {
+  position: absolute;
+  left: 24px;
+  top: calc(50% - 10px);
+  color: #ffffff;
+}
+
+.media-buttons .icon-github {
+  color: #2b414d;
+}
+
+.media-buttons .media-followers {
+  font-size: 15px;
+  color: #9da5ac;
+  padding-top: 18px;
 }

@@ -8,12 +8,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         
+        <!--bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="./js/jquery.waterwheelCarousel.min.js"></script>    
+        <!-- git buttons -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script> 
+        <!--comments slider-->
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        
         <script src="./js/all.js"></script>
     </head>
 <body>
@@ -141,65 +144,80 @@
             <div class="row">
                 <div class="col-xl-12">
                         <div id="carousel">
-                            <div class="comment">
-                                <div class="user-data">
-                                    <div class="user-img"></div>
-                                    <div class="about-user">
-                                        <p><a class="user-name" href="">Steven Strange</a></p>
-                                        <p><a class="user-nickname" href="">@DoctorS</a></p>
-                                    </div>
-                                </div>
-                                <div class="user-comment">
-                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
-                                    <div class="comment-time">2 hours ago</div>
-                                </div>
+                            <div id="buttons">
+                                <a id="prev" class="carousel-btn" href="#">&#10094;</a>
+                                <a id="next" class="carousel-btn" href="#">&#10095;</a> 
                             </div>
-                            <div class="comment">
-                                <div class="user-data">
-                                    <div class="user-img"></div>
-                                    <div class="about-user">
-                                        <p><a class="user-name" href="">Steven jsjjjv</a></p>
-                                        <p><a class="user-nickname" href="">@jbjkkw</a></p>
-                                    </div>
-                                </div>
-                                <div class="user-comment">
-                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
-                                    <div class="comment-time">5 hours ago</div>
-                                </div>
+                            <div id="slides">
+                                <ul>
+                                    <li class="slide">
+                                        <div class="comment">
+                                            <div class="user-data">
+                                                <div class="user-img"></div>
+                                                <div class="about-user">
+                                                    <p><a class="user-name" href="">Steven Strange</a></p>
+                                                    <p><a class="user-nickname" href="">@DoctorS</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
+                                                <div class="comment-time">2 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slide">
+                                        <div class="comment">
+                                            <div class="user-data">
+                                                <div class="user-img"></div>
+                                                <div class="about-user">
+                                                    <p><a class="user-name" href="">Kate Middleton</a></p>
+                                                    <p><a class="user-nickname" href="">@KeyM</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <div class="comment-itself"><a href="">@Gfook</a> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eligendi ab dolores iure error nobis fuga a hic amet veritatis eum, quam ea magnam rerum aut voluptate officiis perferendis incidunt.</div>
+                                                <div class="comment-time">2 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slide">
+                                        <div class="comment">
+                                            <div class="user-data">
+                                                <div class="user-img"></div>
+                                                <div class="about-user">
+                                                    <p><a class="user-name" href="">Piter Parker</a></p>
+                                                    <p><a class="user-nickname" href="">@PiterP</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <div class="comment-itself"><a href="">@Sfhgnfvh</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ex ab eum, voluptatibus repellendus velit molestias cum modi voluptatem, dicta nemo veritatis magnam pariatur, hic est qui assumenda? Adipisci, explicabo!</div>
+                                                <div class="comment-time">8 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="comment">
-                                <div class="user-data">
-                                    <div class="user-img"></div>
-                                    <div class="about-user">
-                                        <p><a class="user-name" href="">Steven jsjjjv</a></p>
-                                        <p><a class="user-nickname" href="">@jbjkkw</a></p>
-                                    </div>
-                                </div>
-                                <div class="user-comment">
-                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
-                                    <div class="comment-time">5 hours ago</div>
-                                </div>
+                        </div>
+                        <div class="betwener"></div>
+                        <div class="media-buttons">
+                            <div class="button-block">
+                                <a class="media-btn github-btn" href=""><span class="icon-github"></span>GitHub</a>
+                                <div class="media-followers">7 352 Followers</div>
                             </div>
-                            <div class="comment">
-                                <div class="user-data">
-                                    <div class="user-img"></div>
-                                    <div class="about-user">
-                                        <p><a class="user-name" href="">Steven jsjjjv</a></p>
-                                        <p><a class="user-nickname" href="">@jbjkkw</a></p>
-                                    </div>
-                                </div>
-                                <div class="user-comment">
-                                    <div class="comment-itself"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</div>
-                                    <div class="comment-time">5 hours ago</div>
-                                </div>
+                            <div class="button-block">
+                                <a class="media-btn twitter-btn" href=""><span class="icon-twitter"></span>Twitter</a>
+                                <div class="media-followers">136 312 Followers</div>
                             </div>
-                        <a href="#" class="prev-comment" id="prev">Prev</a>
-                        <a href="#" class="next-comment" id="next">Next</a>
-                    </div>
+                            <div class="button-block">
+                                <a class="media-btn facebook-btn" href=""><span class="icon-facebook"></span>Facebook</a>
+                                <div class="media-followers">218 092 Followers</div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+
     @@footer('./include/footer.html')
 </body>
 </html>

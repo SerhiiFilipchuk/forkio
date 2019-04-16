@@ -270,37 +270,65 @@
 .comments {
   height: 580px;
   color: #ffffff;
-}
 
+  .betwener {
+    height: 1px;
+    width: 770px;
+    background: #f4f4f4;
+    margin: 0 auto;
+  }
+}
 
 #carousel {
   height: 282px;
   width: 950px;
-  border:1px solid #222;
   font-family: 'Montserrat';
   margin-top: 87px;
   margin-left: auto;
   margin-right: auto;
   position:relative;
-  overflow:hidden;
 
-  .prev-comment {
+  .carousel-btn {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-style: normal;
+    color: #a3a3a3;
+    font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 10px);
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: none;
+      color: darken(#a3a3a3, 10%);
+    }
+  }
+
+  #prev {
     left: 0px;
   }
 
-  .next-comment {
-    position: absolute;
-    top: 50%;
+  #next {
     right: 0px;
   }
 }
 
-.comment {
-  height: 282px;
-  width: 730px;
+#slides {
+  overflow: hidden;
   margin: 0 auto;
+
+  ul {
+    position: relative;
+  }
+
+  li {
+    float: left;
+  }
+}
+
+.comment {
+  height: 100%;
+  width: 730px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,6 +368,10 @@
     line-height: 32px;
     color: #8d81ac;
 
+    &:hover {
+      text-decoration: none;
+      color: darken(#8d81ac, 10%);
+    }
   }
 }
 
@@ -362,6 +394,11 @@
 
   a {
     color: #8d81ac;
+
+    &:hover {
+      text-decoration: none;
+      color: darken(#8d81ac, 10%);
+    }
   }
 
   .comment-time {
@@ -371,3 +408,73 @@
     color: #848e97;
   }
 }
+
+.media-buttons {
+  margin-top: 60px;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  .media-btn {
+    display: inline-block;
+    height: 50px;
+    width: 240px;
+    font-size: 21px;
+    line-height: 50px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s;
+    margin-right: 40px;
+  }
+  
+  .github-btn {
+    background: #f3f3f3;
+    color: #000;
+
+    &:hover {
+      text-decoration: none;
+      background: darken(#f3f3f3, 10%);
+    }
+  }
+  
+  .twitter-btn {
+    background: #26a6d1;
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: none;
+      background: darken(#26a6d1, 10%);
+    }
+  }
+  
+  .facebook-btn {
+    background: #3b5998;
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: none;
+      background: darken(#3b5998, 10%);
+    }
+  }
+
+  .icon-github, .icon-twitter, .icon-facebook {
+    position: absolute;
+    left: 24px;
+    top: calc(50% - 10px);
+    color: #ffffff;
+  }
+
+  .icon-github {
+    color: #2b414d;
+  }
+
+  .media-followers {
+    font-size: 15px;
+    color: #9da5ac;
+    padding-top: 18px;
+  }
+}
+
