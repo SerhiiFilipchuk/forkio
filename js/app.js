@@ -49,7 +49,7 @@ $(document).ready(function () {
   });
   
   //if mouse hover, pause the auto rotation, otherwise rotate it    
-  container.parent().mouseenter(function () {
+    container.parent().mouseenter(function () {
       clearInterval(run);
   }).mouseleave(function () {
       run = setInterval(rotate, speed);

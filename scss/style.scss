@@ -14,29 +14,6 @@ body {
   margin: 0;
 }
 
-.logo {
-
-  img {
-    padding-left: 30px;
-  }
-  .logo-text {
-    padding-left: 17px;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: 'Lato';
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  .logo-prefix {
-    color: #333333;
-  }
-
-  .logo-suffix {
-    color: #8d81ac;
-  }
-}
-
 .nav {
 
   ul {
@@ -48,7 +25,7 @@ body {
     color: #635c73;
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Montserrat';
+  
     font-weight: bold;
     font-style: normal;
 
@@ -86,7 +63,7 @@ body {
 
 
   .hero-title {
-    font-family: 'Montserrat';    
+      
     font-weight: bold;
     font-style: normal;
     font-size: 82px;
@@ -105,7 +82,7 @@ body {
   }
 
   .hero-note {
-    font-family: 'Montserrat';    
+      
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -120,7 +97,7 @@ body {
 
   .download-btn-block {
     position: absolute;
-    bottom: -565px;
+    bottom: -585px;
     left: calc(50% - 195px);
     z-index: 1;
   }
@@ -131,7 +108,7 @@ body {
     background: #8d81ac;
     border-radius: 100px;
     padding: 0 66px;
-    font-family: 'Montserrat';    
+      
     font-weight: bold;
     font-style: normal;
     font-size: 21px;
@@ -147,7 +124,7 @@ body {
   }
 
   .download-btn-note {
-    font-family: 'Montserrat';    
+      
     font-weight: normal;
     font-style: normal;
     color: #848e97;
@@ -164,7 +141,7 @@ body {
   text-align: center;
 
   h2 {
-    font-family: 'Montserrat';
+  
     font-weight: bold;
     font-style: normal;
     font-size: 54px;
@@ -174,7 +151,7 @@ body {
   }
 
   p {
-    font-family: 'Montserrat';
+  
     font-weight: normal;
     font-style: normal;
     color: #323232;
@@ -219,7 +196,7 @@ body {
     padding-left: 10px;
   }
   .opportunity-text1, .opportunity-text2, .opportunity-text3, .opportunity-text4 {
-    font-family: 'Montserrat';
+  
     font-style: normal;
     width: 380px;
   }
@@ -260,7 +237,7 @@ body {
   padding-top: 84px;
   color: #8d81ac;
   font-size: 48px;
-  font-family: 'Montserrat';
+
   font-weight: bold;
   font-style: normal;
   text-align: left;
@@ -284,7 +261,7 @@ body {
 #carousel {
   height: 282px;
   width: 950px;
-  font-family: 'Montserrat';
+
   margin-top: 87px;
   margin-left: auto;
   margin-right: auto;
@@ -307,11 +284,11 @@ body {
   }
 
   #prev {
-    left: 0px;
+    left: -10px;
   }
 
   #next {
-    right: 0px;
+    right: -10px;
   }
 }
 
@@ -404,7 +381,7 @@ body {
   }
 
   .comment-time {
-    font-family: 'Montserrat';
+  
     font-size: 16px;
     line-height: 32px;
     color: #848e97;
@@ -413,7 +390,7 @@ body {
 
 .media-buttons {
   margin-top: 60px;
-  font-family: 'Montserrat';
+
   font-weight: normal;
   font-style: normal;
   text-align: center;
@@ -483,7 +460,7 @@ body {
 /* PEOPLE ARE TALKING ABOUT FORKIO */
 
 .people-are-talking {
-  font-family: 'Montserrat';
+
   height: 768px;
   background: url(../images/people-are-talking-bg.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -567,7 +544,7 @@ body {
   height: 900px;
   background:url(../images/pricing-bg.png) no-repeat 50% 50%;
   background-size: cover;
-  font-family: 'Montserrat';
+
   font-style: normal;
   font-weight: normal;
 
@@ -674,7 +651,7 @@ body {
 .subscribe-to-newsletter {
   height: 134px;
   background: #f4f4f4;
-  font-family: 'Montserrat';
+
   font-weight: normal;
   font-style: normal;
 
@@ -843,5 +820,71 @@ footer {
     font-size: 14px;
     color: #848e97;
     line-height: 23px;
+  }
+}
+
+/* LINKS */
+
+.links {
+  height: 710px;
+  background: #ffffff;
+  padding-top: 80px;
+  text-align: left;
+
+  .section-title {
+    font-size: 28px;
+    color: #d3d1da;
+    font-weight: bold;
+    padding-bottom: 53px;
+  }
+
+  .heading {
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 26px;
+    padding-bottom: 5px;
+  }
+
+  .short-text {
+    font-size: 13px;
+    color: #848e97;
+    line-height: 21px;
+    padding-bottom: 15px;
+  }
+  .more-info-btn {
+    display: inline-block;
+    height: 35px;
+    width: 160px;
+    margin-top: 30px;
+    background: #f4f4f4;
+    font-size: 14px;
+    color: #8d81ac;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    transition: all .3s;
+
+    &:hover {
+      background: darken(#f4f4f4, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+.new-release {
+  .update {
+    color: #323232;
+  }
+}
+
+.pop-extentions {
+  .extention{
+    color: #8d81ac;
+  }
+}
+
+.new-blogs {
+  .blog-name {
+    color: #8d81ac;
   }
 }

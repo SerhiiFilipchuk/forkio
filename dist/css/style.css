@@ -225,33 +225,17 @@ body {
   margin: 0;
 }
 
-.logo img {
-  padding-left: 30px;
-}
-
-.logo .logo-text {
-  font: normal bold 24px 'Lato';
-  padding-left: 17px;
-  text-transform: uppercase;
-}
-
-.logo .logo-prefix {
-  color: #333333;
-}
-
-.logo .logo-suffix {
-  color: #8d81ac;
-}
-
 .nav ul {
   width: 100%;
   padding-right: 15px;
 }
 
 .nav a {
-  font: normal bold 16px 'Montserrat';
   color: #635c73;
+  font-size: 16px;
   text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .nav a:hover {
@@ -286,7 +270,9 @@ body {
 }
 
 .hero .hero-title {
-  font: normal bold 82px 'Montserrat';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 82px;
   color: #ffffff;
   text-transform: capitalize;
   padding-top: 108px;
@@ -299,7 +285,9 @@ body {
 }
 
 .hero .hero-note {
-  font: normal normal 16px 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
   color: #848e97;
   text-transform: uppercase;
   padding-top: 18px;
@@ -311,19 +299,22 @@ body {
 
 .hero .download-btn-block {
   position: absolute;
-  bottom: -565px;
+  bottom: -585px;
   left: calc(50% - 195px);
   z-index: 1;
 }
 
 .hero .download-btn {
-  font: normal bold 21px/62px 'Montserrat';
   display: inline-block;
   height: 62px;
   background: #8d81ac;
   border-radius: 100px;
   padding: 0 66px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
   color: #ffffff;
+  line-height: 62px;
   text-transform: capitalize;
   text-decoration: none;
   -webkit-transition: all .3s;
@@ -335,7 +326,6 @@ body {
 }
 
 .hero .download-btn-note {
-  font-family: 'Montserrat';
   font-weight: normal;
   font-style: normal;
   color: #848e97;
@@ -352,15 +342,20 @@ body {
 }
 
 .revol-editor h2 {
-  font: normal bold 54px 'Montserrat';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 54px;
   color: #635c73;
   text-transform: uppercase;
   padding-top: 130px;
 }
 
 .revol-editor p {
-  font: normal normal 21px/32px 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
   color: #323232;
+  font-size: 21px;
+  line-height: 32px;
   padding-top: 40px;
 }
 
@@ -408,7 +403,6 @@ body {
 .what-you-get .opportunity-text2,
 .what-you-get .opportunity-text3,
 .what-you-get .opportunity-text4 {
-  font-family: 'Montserrat';
   font-style: normal;
   width: 380px;
 }
@@ -444,9 +438,11 @@ body {
 }
 
 .what-you-get-title {
-  font: normal bold 48px 'Montserrat';
   padding-top: 84px;
   color: #8d81ac;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
   text-align: left;
   overflow: hidden;
 }
@@ -468,7 +464,6 @@ body {
 #carousel {
   height: 282px;
   width: 950px;
-  font-family: 'Montserrat';
   margin-top: 87px;
   margin-left: auto;
   margin-right: auto;
@@ -490,11 +485,11 @@ body {
 }
 
 #carousel #prev {
-  left: 0px;
+  left: -10px;
 }
 
 #carousel #next {
-  right: 0px;
+  right: -10px;
 }
 
 #slides {
@@ -607,13 +602,13 @@ body {
 }
 
 .user-comment .comment-time {
-  font: 16px/32px 'Montserrat';
+  font-size: 16px;
+  line-height: 32px;
   color: #848e97;
 }
 
 .media-buttons {
   margin-top: 60px;
-  font-family: 'Montserrat';
   font-weight: normal;
   font-style: normal;
   text-align: center;
@@ -690,7 +685,6 @@ body {
 /* PEOPLE ARE TALKING ABOUT FORKIO */
 
 .people-are-talking {
-  font-family: 'Montserrat';
   height: 768px;
   background: url(../images/people-are-talking-bg.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -792,7 +786,6 @@ body {
   height: 900px;
   background: url(../images/pricing-bg.png) no-repeat 50% 50%;
   background-size: cover;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
 }
@@ -900,7 +893,6 @@ body {
 .subscribe-to-newsletter {
   height: 134px;
   background: #f4f4f4;
-  font-family: 'Montserrat';
   font-weight: normal;
   font-style: normal;
 }
@@ -1096,4 +1088,66 @@ footer .betweener {
   font-size: 14px;
   color: #848e97;
   line-height: 23px;
+}
+
+/* LINKS */
+
+.links {
+  height: 710px;
+  background: #ffffff;
+  padding-top: 80px;
+  text-align: left;
+}
+
+.links .section-title {
+  font-size: 28px;
+  color: #d3d1da;
+  font-weight: bold;
+  padding-bottom: 53px;
+}
+
+.links .heading {
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 26px;
+  padding-bottom: 5px;
+}
+
+.links .short-text {
+  font-size: 13px;
+  color: #848e97;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+
+.links .more-info-btn {
+  display: inline-block;
+  height: 35px;
+  width: 160px;
+  margin-top: 30px;
+  background: #f4f4f4;
+  font-size: 14px;
+  color: #8d81ac;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.links .more-info-btn:hover {
+  background: #dbdbdb;
+  text-decoration: none;
+}
+
+.new-release .update {
+  color: #323232;
+}
+
+.pop-extentions .extention {
+  color: #8d81ac;
+}
+
+.new-blogs .blog-name {
+  color: #8d81ac;
 }
