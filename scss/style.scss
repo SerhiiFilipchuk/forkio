@@ -271,7 +271,7 @@
   height: 580px;
   color: #ffffff;
 
-  .betwener {
+  .betweener {
     height: 1px;
     width: 770px;
     background: #f4f4f4;
@@ -315,7 +315,6 @@
 
 #slides {
   overflow: hidden;
-  margin: 0 auto;
 
   ul {
     position: relative;
@@ -329,6 +328,7 @@
 .comment {
   height: 100%;
   width: 730px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -478,3 +478,210 @@
   }
 }
 
+/* PEOPLE ARE TALKING ABOUT FORKIO */
+
+.people-are-talking {
+  font-family: 'Montserrat';
+  height: 768px;
+  background: url(../images/people-are-talking-bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+
+  h2 {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 98px;
+    margin-bottom: 83px;
+  }
+
+  .betweener {
+    height: 1px;
+    width: 770px;
+    background: #655968;
+    margin: 0 auto;
+  }
+}
+
+.company-feedback-above {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .company-logo {
+    height: 90px;
+  }
+
+  .sm-logo {
+    padding-top: 10px;
+  }
+
+  .codrops-logo {
+    padding-top: 7px;
+  }
+
+  .feedback {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+
+  }
+}
+
+.company-feedback-below {
+  margin-top: 106px;
+  margin-bottom: 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .company-logo {
+    height: 65px;
+  }
+
+  .pb-logo {
+    padding-top: 5px;
+  }
+
+  .feedback {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+/* SUBSCRIPTION PRICES */
+
+.subscription-prices {
+  height: 900px;
+  background:url(../images/pricing-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .list-of-plans {
+    height: 560px;
+
+  }
+
+  .prices-note {
+    margin-top: 77px;
+    font-size: 14px;
+    color: #a291a5;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+.subscription-plan {
+  display: inline-block;
+  position: relative;
+  height: 457px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.11);
+  text-align: center;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.2);
+    background: rgba(0, 0, 0, 0.161);
+    cursor: pointer;
+
+    .for-who {
+      background-color: rgba(0, 0, 0, 0.11);
+    }
+  }
+  
+  .for-who {
+    display: inline-block;
+    height: 97px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 97px;
+    text-transform: uppercase;
+  }
+
+  .how-much {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 36px;
+    padding-bottom: 27px;
+  }
+  
+  .per-month {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.302);
+    text-transform: uppercase;
+  }
+
+  .separator {
+    display: inline-block;
+    height: 5px;
+    width: 60px;
+    background-color: rgb(141, 129, 172);
+    margin: 39px auto 25px auto;
+  }
+
+  .license-type {
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+
+  .purchase-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 38px;
+    left: calc(50% - 80px);
+    height: 42px;
+    width: 160px;
+    border-radius: 50px;
+    line-height: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.149);
+  }
+}
+
+/* SUBSCRIBE FORM */
+
+.subscribe-to-newsletter {
+  height: 134px;
+  background: #f4f4f4;
+
+  .gh {
+    height: 100%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    color: #635c73;
+    text-transform: capitalize;
+    margin: auto 0;
+  }
+}
